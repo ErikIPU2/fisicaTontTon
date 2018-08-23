@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="indigo darken-3">
+                <div class="nav-wrapper">
+                     <a href="#" class=" brand-logo truncate">Dilatação Linear</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <form class="container center-align" id="inputs">
+
+                <br>
+
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <i class="material-icons prefix">add</i>
+                        <input type="number" id="variComprimento">
+                        <label for="variComprimento">Variação do comprimeto (metros)</label>
+                    </div>
+
+                    <div class="col s12 input-field">
+                        <i class="material-icons prefix">maximize</i>
+                        <input type="number" id="inicialComprimento">
+                        <label for="inicialComprimento">Comprimento inicial (metros)</label>
+                    </div>
+
+                    <div class="col s12 input-field">
+                        <i class="material-icons prefix">open_with</i>
+                        <input type="number" id="coef">
+                        <label for="coef">Coeficiente de dilatação linear</label>
+                    </div>
+                    
+
+                    <div class="col s12 input-field">
+                        <i class="material-icons prefix">change_history</i>
+                        <input type="number" id="temp">
+                        <label for="temp">Variação de temperatura (kelvin)</label>
+                    </div>
+
+                    <a href="#" onclick="calcular()" class="btn indigo darken-3">Calcular</a>
+  
+                </div>
+
+
+            </form>
+
+
+        </main>
+
+        
+                        
+
+      
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
+        
